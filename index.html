@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            display: grid;
+        }
+
+        .wrapper {
+            margin: auto;
+            width: 35.688rem;
+            height: 6.938rem;
+            display: grid;
+        }
+
+        .button {
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            width: 6.313;
+            height: 2.375rem;
+            cursor: pointer;
+            color: white;
+            background-color: #6C757D;
+            border: 1px solid #6C757D;
+            border-radius: .25rem;
+            text-transform: uppercase;
+        }
+
+        .button:focus {
+            box-shadow: 0 0 0 0.2rem rgb(108, 117, 125);
+        }
+
+        #color {
+            width: 6.25rem;
+            height: 2.375rem;
+            font-size: 2.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin-bottom: .5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            display: block;
+            cursor: default;
+            margin-left: 5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Change Color Background</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="uppercase">
+            hex color: 
+            <span id="color"></span>
+        </h1>
+        <button id="genNew" class="button" type="button">Click me</button>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
